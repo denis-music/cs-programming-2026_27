@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="DLWMS26.ConsoleApp/DLWMS26.ConsoleApp.csproj" />
+  <Project Path="DLWMS26.Data/DLWMS26.Data.csproj" />
+  <Project Path="DLWMS26.Servis/DLWMS26.Servis.csproj" Id="5a29ca10-1205-471f-8273-7e1f18217910" />
+</Solution>
