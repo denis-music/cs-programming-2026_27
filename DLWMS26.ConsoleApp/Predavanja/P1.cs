@@ -1,12 +1,5 @@
 ﻿using DLWMS26.Data.Models;
 
-using Microsoft.VisualBasic;
-
-using System;
-using System.Collections.Generic;
-using System.Reflection.Emit;
-using System.Text;
-
 namespace DLWMS26.ConsoleApp.Predavanja
 {
     internal class P1
@@ -23,7 +16,7 @@ namespace DLWMS26.ConsoleApp.Predavanja
 
         private static void Ekstenzije()
         {
-            DateTime danas = DateTime.Now;
+            DateTime danas = DateTime.Now;            
             if (danas.JelVikend())
                 Console.WriteLine("Super, nema predavanja :)");
             else
@@ -39,12 +32,12 @@ namespace DLWMS26.ConsoleApp.Predavanja
 
         private static void VrijednostiReference()
         {
-            Student student1 = new Student("IB230032", "Goran", "Skondric");
+            Student student1 = new Student(1, "IB230032", "Goran", "Skondric");
             Student student2 = student1;
             student1.Ime = "Haris";
 
-            Student student3 = new Student("IB230032", "Goran", "Skondric");
-            Student student4 = new Student("IB230032", "Goran", "Skondric");
+            Student student3 = new Student(3, "IB230032", "Goran", "Skondric");
+            Student student4 = new Student(4, "IB230032", "Goran", "Skondric");
             if(student3 == student4)
                 Console.WriteLine("Isti studenti");
 
@@ -87,7 +80,7 @@ namespace DLWMS26.ConsoleApp.Predavanja
 
         private static void BazniTip()
         {
-            object goran = new Student("IB230032", "Goran", "Skondric");
+            object goran = new Student(1, "IB230032", "Goran", "Skondric");
             object godina = 2026;//boxing
             object imePrezime = "Goran Skondric";
 

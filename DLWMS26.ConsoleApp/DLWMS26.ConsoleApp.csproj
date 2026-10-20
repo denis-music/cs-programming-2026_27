@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DLWMS26.Data\DLWMS26.Data.csproj" />
+    <ProjectReference Include="..\DLWMS26.Servis\DLWMS26.Servis.csproj" />
   </ItemGroup>
 
 </Project>

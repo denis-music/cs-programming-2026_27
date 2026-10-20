@@ -15,11 +15,11 @@ namespace DLWMS26.ConsoleApp.Predavanja
 
         private static void OsnoveKlasa()
         {
-            Student gornaSkondric = new Student("IB230032", "Gorna", "Skondric");
+            Student gornaSkondric = new Student(1, "IB230032", "Gorna", "Skondric");
 
-            var denisMusic = new Student("IB230033", "Denis", "Music");
+            var denisMusic = new Student(2, "IB230033", "Denis", "Music");
 
-            Student jasminAzemovic = new("IB230034", "Jasmin", "Azemovic");
+            Student jasminAzemovic = new(3, "IB230034", "Jasmin", "Azemovic");
 
 
             Student johnDoe = new Student

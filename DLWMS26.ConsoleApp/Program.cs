@@ -7,8 +7,7 @@ namespace DLWMS26.ConsoleApp
     {
         static void Main(string[] args)
         {
-            P1.Pokreni();
-          
+            P2.Pokreni();          
         }
     }
 }
