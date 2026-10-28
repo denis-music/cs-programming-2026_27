@@ -9,10 +9,15 @@ namespace DLWMS26.ConsoleApp.Predavanja
 {
     internal class P2
     {
-
         static StudentServis db = new StudentServis();
-        public static void Pokreni()
+
+        static ILogger _logger;//dblogger
+
+
+        public static void Pokreni(ILogger logger)
         {
+            _logger = logger;
+
             //CRUDoperacije();
             //NullProjevera();
             //Var();
@@ -23,13 +28,21 @@ namespace DLWMS26.ConsoleApp.Predavanja
 
         private static void Params()
         {
+            _logger.Log("Pokrenuta metoda Params");
             int suma1 = Sumiraj(new int[]{2, 5, 8,12, 9});
             int suma2 = Sumiraj([2, 5, 8, 9, 10]);
             int suma3 = Sumiraj(2, 5, 8, 9, 10,10,25, "Denis", true);
 
-
-            string rezultat = string.Join("-", "denis", 29, 2.5, true, "Goran");
-            Console.WriteLine(rezultat);
+            try
+            {
+                string rezultat = string.Join("-", "denis", 29, 2.5, true, "Goran");
+                Console.WriteLine(rezultat);
+            }
+            catch (Exception ex)
+            {
+                _logger.Log(ex.Message);
+            }
+            
 
         }
 
