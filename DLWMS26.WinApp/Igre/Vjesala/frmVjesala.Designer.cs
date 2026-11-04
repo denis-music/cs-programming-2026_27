@@ -36,6 +36,7 @@
             // 
             // lblPrikaz
             // 
+            lblPrikaz.AutoSize = true;
             lblPrikaz.Font = new Font("Segoe UI", 30F);
             lblPrikaz.Location = new Point(15, 84);
             lblPrikaz.Name = "lblPrikaz";
