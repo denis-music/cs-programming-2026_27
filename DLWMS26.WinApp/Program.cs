@@ -1,3 +1,6 @@
+using DLWMS26.WinApp.Igre.Vjesala;
+using DLWMS26.WinApp.Igre.XO;
+
 namespace DLWMS26.WinApp
 {
     internal static class Program
@@ -11,7 +14,10 @@ namespace DLWMS26.WinApp
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+
+            Form startnaForma = new frmVjesala();
+            //Osoba osoba = new Student();
+            Application.Run(startnaForma);
         }
     }
 }
