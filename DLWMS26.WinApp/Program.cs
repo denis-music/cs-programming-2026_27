@@ -15,7 +15,7 @@ namespace DLWMS26.WinApp
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
 
-            Form startnaForma = new frmVjesala();
+            Form startnaForma = new frmPrijava();
             //Osoba osoba = new Student();
             Application.Run(startnaForma);
         }

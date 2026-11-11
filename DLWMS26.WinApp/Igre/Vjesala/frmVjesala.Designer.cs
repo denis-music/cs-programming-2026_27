@@ -40,7 +40,7 @@
             lblPrikaz.Font = new Font("Segoe UI", 30F);
             lblPrikaz.Location = new Point(15, 84);
             lblPrikaz.Name = "lblPrikaz";
-            lblPrikaz.Size = new Size(410, 54);
+            lblPrikaz.Size = new Size(0, 54);
             lblPrikaz.TabIndex = 0;
             lblPrikaz.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -64,7 +64,7 @@
             // 
             // progresPokusaji
             // 
-            progresPokusaji.Location = new Point(15, 25);
+            progresPokusaji.Location = new Point(20, 25);
             progresPokusaji.Name = "progresPokusaji";
             progresPokusaji.Size = new Size(410, 23);
             progresPokusaji.TabIndex = 3;
@@ -79,7 +79,7 @@
             Controls.Add(txtSlovo);
             Controls.Add(lblPrikaz);
             Name = "frmVjesala";
-            Text = "frmVjesala";
+            Text = "Pogađanje riječi";
             Load += frmVjesala_Load;
             ResumeLayout(false);
             PerformLayout();
