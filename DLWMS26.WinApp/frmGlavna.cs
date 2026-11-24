@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DLWMS26.WinApp.Sluzba;
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,6 +36,23 @@ namespace DLWMS26.WinApp
         private void PrikaziPrijavljenogKorisnika()
         {
             tslblPrijavljeniKorisnik.Text = $"Korisnik: {Aplikacija.PrijavljeniKorisnik}";
+        }
+
+        private void pretragaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PrikaziFormu(new frmStudentiPretraga());        
+        }
+
+        private void PrikaziFormu(Form form)
+        {            
+            form.MdiParent = this;
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+        }
+
+        private void noviStudetnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PrikaziFormu(new frmStudentiNovi());
         }
     }
 }

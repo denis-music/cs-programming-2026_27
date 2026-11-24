@@ -36,6 +36,9 @@
             igreToolStripMenuItem = new ToolStripMenuItem();
             xOToolStripMenuItem = new ToolStripMenuItem();
             pogađanjeRiječiToolStripMenuItem = new ToolStripMenuItem();
+            studentiToolStripMenuItem = new ToolStripMenuItem();
+            noviStudetnToolStripMenuItem = new ToolStripMenuItem();
+            pretragaToolStripMenuItem = new ToolStripMenuItem();
             statusStrip1 = new StatusStrip();
             tslblPrijavljeniKorisnik = new ToolStripStatusLabel();
             menuStrip1.SuspendLayout();
@@ -44,7 +47,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, igreToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, igreToolStripMenuItem, studentiToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -61,19 +64,19 @@
             // odjavaToolStripMenuItem
             // 
             odjavaToolStripMenuItem.Name = "odjavaToolStripMenuItem";
-            odjavaToolStripMenuItem.Size = new Size(180, 22);
+            odjavaToolStripMenuItem.Size = new Size(111, 22);
             odjavaToolStripMenuItem.Text = "Odjava";
             odjavaToolStripMenuItem.Click += odjavaToolStripMenuItem_Click;
             // 
             // toolStripSeparator1
             // 
             toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(177, 6);
+            toolStripSeparator1.Size = new Size(108, 6);
             // 
             // izlazToolStripMenuItem
             // 
             izlazToolStripMenuItem.Name = "izlazToolStripMenuItem";
-            izlazToolStripMenuItem.Size = new Size(180, 22);
+            izlazToolStripMenuItem.Size = new Size(111, 22);
             izlazToolStripMenuItem.Text = "Izlaz";
             izlazToolStripMenuItem.Click += izlazToolStripMenuItem_Click;
             // 
@@ -95,6 +98,27 @@
             pogađanjeRiječiToolStripMenuItem.Name = "pogađanjeRiječiToolStripMenuItem";
             pogađanjeRiječiToolStripMenuItem.Size = new Size(158, 22);
             pogađanjeRiječiToolStripMenuItem.Text = "Pogađanje riječi";
+            // 
+            // studentiToolStripMenuItem
+            // 
+            studentiToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { noviStudetnToolStripMenuItem, pretragaToolStripMenuItem });
+            studentiToolStripMenuItem.Name = "studentiToolStripMenuItem";
+            studentiToolStripMenuItem.Size = new Size(63, 20);
+            studentiToolStripMenuItem.Text = "Studenti";
+            // 
+            // noviStudetnToolStripMenuItem
+            // 
+            noviStudetnToolStripMenuItem.Name = "noviStudetnToolStripMenuItem";
+            noviStudetnToolStripMenuItem.Size = new Size(180, 22);
+            noviStudetnToolStripMenuItem.Text = "Novi student";
+            noviStudetnToolStripMenuItem.Click += noviStudetnToolStripMenuItem_Click;
+            // 
+            // pretragaToolStripMenuItem
+            // 
+            pretragaToolStripMenuItem.Name = "pretragaToolStripMenuItem";
+            pretragaToolStripMenuItem.Size = new Size(180, 22);
+            pretragaToolStripMenuItem.Text = "Pretraga";
+            pretragaToolStripMenuItem.Click += pretragaToolStripMenuItem_Click;
             // 
             // statusStrip1
             // 
@@ -118,9 +142,10 @@
             ClientSize = new Size(800, 450);
             Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
+            IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
             Name = "frmGlavna";
-            Text = "frmGlavna";
+            Text = "Studentska služba :: v.001";
             WindowState = FormWindowState.Maximized;
             Load += frmGlavna_Load;
             menuStrip1.ResumeLayout(false);
@@ -143,5 +168,8 @@
         private ToolStripMenuItem pogađanjeRiječiToolStripMenuItem;
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel tslblPrijavljeniKorisnik;
+        private ToolStripMenuItem studentiToolStripMenuItem;
+        private ToolStripMenuItem noviStudetnToolStripMenuItem;
+        private ToolStripMenuItem pretragaToolStripMenuItem;
     }
 }

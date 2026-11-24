@@ -29,21 +29,42 @@
         private void InitializeComponent()
         {
             txtStudenti = new TextBox();
+            btnKupovina = new Button();
+            txtKolicina = new TextBox();
             SuspendLayout();
             // 
             // txtStudenti
             // 
-            txtStudenti.Location = new Point(12, 12);
+            txtStudenti.Location = new Point(12, 90);
             txtStudenti.Multiline = true;
             txtStudenti.Name = "txtStudenti";
-            txtStudenti.Size = new Size(361, 336);
+            txtStudenti.Size = new Size(361, 258);
             txtStudenti.TabIndex = 0;
+            // 
+            // btnKupovina
+            // 
+            btnKupovina.Location = new Point(118, 31);
+            btnKupovina.Name = "btnKupovina";
+            btnKupovina.Size = new Size(75, 23);
+            btnKupovina.TabIndex = 1;
+            btnKupovina.Text = "Kupovina";
+            btnKupovina.UseVisualStyleBackColor = true;
+            btnKupovina.Click += btnKupovina_Click;
+            // 
+            // txtKolicina
+            // 
+            txtKolicina.Location = new Point(12, 31);
+            txtKolicina.Name = "txtKolicina";
+            txtKolicina.Size = new Size(100, 23);
+            txtKolicina.TabIndex = 2;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(394, 360);
+            Controls.Add(txtKolicina);
+            Controls.Add(btnKupovina);
             Controls.Add(txtStudenti);
             Name = "Form1";
             Text = "Form1";
@@ -55,5 +76,7 @@
         #endregion
 
         private TextBox txtStudenti;
+        private Button btnKupovina;
+        private TextBox txtKolicina;
     }
 }
